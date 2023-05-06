@@ -95,7 +95,7 @@ function initBuffer (webgl) {
 function setViewMatrix (webgl) {
     var u_ViewMatrix = webgl.getUniformLocation(webgl.program, 'u_ViewMatrix');
 
-    //设置视点 视线 上方向
+    //设置视点 视线 上方向 (3 * 3)
     var viewMatrix = new Matrix4();
     viewMatrix.setLookAt(-0.20, 0.05, 0.25, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
     
